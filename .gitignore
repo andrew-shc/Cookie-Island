@@ -1,32 +1,9 @@
-# Prerequisites
-*.d
+# Code::Blocks Project Workspace
+Cookie Island.cbp
+Cookie Island.depend
+Cookie Island.layout
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# Remove all unnecassary folders and files 
+SFML-2.5.1/
+obj/
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
