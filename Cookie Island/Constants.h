@@ -10,7 +10,7 @@
 // --- GAME CONFIGURATION ---
 unsigned int BLOCK_SZ = 50; // by pixels
 unsigned int FPS_LIMIT = 80;
-std::string LOCAL_DIR = "C:\\Users\\Andrew Shen\\Desktop\\Cookie Island\\";
+std::string LOCAL_DIR = "C:\\Users\\Andrew Shen\\Desktop\\Cookie-Island\\Cookie Island\\";
 std::string RES_DIR = LOCAL_DIR+"resource\\";
 sf::Vector2f SCREEN_SIZE(1000, 1000);
 sf::Vector2f SCREEN_VIEW_B(5, 5);  // Size in blocks; Screen View Size Start Position

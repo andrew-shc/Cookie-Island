@@ -1,19 +1,15 @@
 # Cookie Island
-A 2D game based off Terreria and Minecraft.
+A 2D game based off Terraria and Minecraft. This game is a survival gameplay
+and no creative mode. This game will include a special mode
 
 ### Project Bulletin Board
-- Fixing with the picture issue
-- Project has already started
+- Will add Collision (System 1.0)
 
 ### Requirements
-- If you can run .exe file
-- NOTE: Too early to test hardware requirements
+- Only if you can run .exe file
 
 ### How to run
 - Run the .exe file (debug)
 
 ### How to play
 - Press WASD to move
-
-### Version name convention
-version_stage major.minor[.build]

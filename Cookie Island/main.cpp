@@ -1,12 +1,10 @@
 #include <iostream>
-#include <functional>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
 #include "Constants.h"
 #include "Terrain.h"
 #include "Player.h"
-
 
 using namespace std;
 using namespace sf;
@@ -16,8 +14,11 @@ int main()
 {
     cout << "Initializing...\n";
     //err().rdbuf(NULL);  // No error message (especially with the error message file can't load)
+    Vector2i WORLD_SIZE(100, 100);
 
-    Terrain terrain(Vector2f(100, 100));  // x, y
+
+
+    Terrain terrain(WORLD_SIZE);  // x, y
     Player player;
 
     terrain.loadTexture();

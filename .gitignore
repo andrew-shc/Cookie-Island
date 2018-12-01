@@ -3,7 +3,8 @@ Cookie Island.cbp
 Cookie Island.depend
 Cookie Island.layout
 
-# Remove all unnecassary folders and files 
+# Remove all unnecassary folders and files
 SFML-2.5.1/
 obj/
 *.dll
+TEMP.txt
