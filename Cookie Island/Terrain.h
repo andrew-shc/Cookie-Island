@@ -14,13 +14,13 @@ using namespace sf;
 class Terrain {
 private:
     Vector2i TERRAIN_SZ;
-    Vector2f pos;  // the position of the terrain, resets if exceed by 1
-    Vector2i ofs;  // the offset
+    Vector2f pos;  // the position of the terrain by pixels
+    Vector2i ofs;  // the offset by size of blocks
     vector<Texture> txtr;
     vector<vector<unsigned int>> TERRAIN_DT;
 
 public:
-    Terrain(Vector2i sz);
+    Terrain(Vector2i sz, Vector2i start_pos);
 
     void loadTexture();
     void generateTerrain();
@@ -33,10 +33,9 @@ public:
 
 };
 
-Terrain::Terrain(Vector2i sz) {
+Terrain::Terrain(Vector2i sz, Vector2i start_ofs) {
 TERRAIN_SZ = sz;
-//ofs.x = TERRAIN_SZ.x-SCREEN_VIEW_B.x;
-//ofs.y = TERRAIN_SZ.y-SCREEN_VIEW_B.y;
+ofs = start_ofs;
 }
 
 void Terrain::loadTexture() {
@@ -85,7 +84,6 @@ for (int y = SCREEN_VIEW_B.y; y < SCREEN_VIEW_F.y; ++y) {
 }
 
 void Terrain::setPos(Vector2f _mov) {
-cout << "POS: " <<pos.x << " " << pos.y << " OFS: " <<ofs.x << " " << ofs.y << endl;
 
 if (_mov.x == 1 and ofs.x < 0) pos.x += SPEED;   // terrain movement; and to prevent the player getting out of the world
 if (_mov.y == 1 and ofs.y < 0) pos.y += SPEED;
@@ -116,4 +114,3 @@ return pos;
 }
 
 #endif
-

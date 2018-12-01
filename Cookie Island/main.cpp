@@ -1,6 +1,5 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
 
 #include "Constants.h"
 #include "Terrain.h"
@@ -15,17 +14,15 @@ int main()
     cout << "Initializing...\n";
     //err().rdbuf(NULL);  // No error message (especially with the error message file can't load)
     Vector2i WORLD_SIZE(100, 100);
+    Vector2i PLAYER_START_POS(-50, -50);  // Player starting location (-ofs, -ofs) as where in Quad IV
+    Vector2f ply_movement;
 
-
-
-    Terrain terrain(WORLD_SIZE);  // x, y
+    Terrain terrain(WORLD_SIZE, PLAYER_START_POS);
     Player player;
 
     terrain.loadTexture();
     terrain.generateTerrain();
     window.setFramerateLimit(FPS_LIMIT);
-
-    Vector2f ply_movement;
 
     cout << "Game Started!\n";
 

@@ -1,15 +1,15 @@
 # Cookie Island
-A 2D game based off Terraria and Minecraft. This game is a survival gameplay
-and no creative mode. This game will include a special mode
+A 2D game based off Terraria and Minecraft. It is a 2D sandbox game similar
+to Terreria. This game has two gameplay mode: survival and a special mode. 
 
 ### Project Bulletin Board
-- Will add Collision (System 1.0)
+- Will add Collision System (1.0)
 
 ### Requirements
-- Only if you can run .exe file
+- If you can run .exe file
 
 ### How to run
-- Run the .exe file (debug)
+- Run the Cookie Island.exe file
 
 ### How to play
 - Press WASD to move
