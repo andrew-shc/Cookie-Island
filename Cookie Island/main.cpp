@@ -13,8 +13,8 @@ int main()
 {
     cout << "Initializing...\n";
     //err().rdbuf(NULL);  // No error message (especially with the error message file can't load)
-    Vector2i WORLD_SIZE(100, 100);
-    Vector2i PLAYER_START_POS(-50, -50);  // Player starting location (-ofs, -ofs) as where in Quad IV
+    Vector2i WORLD_SIZE(100, 50);  // x, y
+    Vector2i PLAYER_START_POS(-20, -20);  // Player starting location (-ofs, -ofs) as where in Quad IV
     Vector2f ply_movement;
 
     Terrain terrain(WORLD_SIZE, PLAYER_START_POS);
@@ -34,16 +34,16 @@ int main()
             if (event.type == Event::Closed)
                 window.close();
         }
+        ply_movement = player.getMot();
 
         window.clear();
         player.update();
-        ply_movement = player.getMot();
 
         terrain.setPos(ply_movement);
-
         terrain.showTerrain();
 
         player.show(window);
+        player.collision(window, terrain.getPos());
         window.display();
 
     }
