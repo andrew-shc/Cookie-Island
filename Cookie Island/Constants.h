@@ -22,7 +22,7 @@ unsigned int SPEED = 5; // pixel per frame
 sf::Vector2f PLAYER_SIZE(45, 90);
 sf::Vector2i PLAYER_COLLISION_BOX(5, 5);  // size in block
 //sf::Vector2f PLAYER_BOX_COL_OFS(0, 0);
-sf::Vector2f PLAYER_ABS_POS(SCREEN_SIZE.x/2, SCREEN_SIZE.y/2);  // Player position to the screen
+sf::Vector2f PLAYER_ABS_POS(SCREEN_SZ.x/2, SCREEN_SZ.y/2);  // Player position to the screen
 
 
 

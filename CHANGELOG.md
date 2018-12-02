@@ -1,3 +1,6 @@
+## Indev 1.1.2 - Dec 1, 2018
+- Bug fixes!
+
 ## Indev 1.1.1 - Dec 1, 2018
 - [FIX]
   - [TERRAIN] The terrain crashes/broke at specific point when either coordinate exceeds -80

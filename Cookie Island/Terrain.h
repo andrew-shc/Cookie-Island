@@ -41,17 +41,17 @@ Terrain::Terrain(Vector2i sz, Vector2i start_ofs) {
 void Terrain::loadTexture() {
   string fname;
   for (int i = 0; i < sizeof(TXTR_LOAD_FNAME)/sizeof(TXTR_LOAD_FNAME[0]); ++i) {
-      fname = TXTR_LOAD_FNAME[i];
-      Texture t;
-      if (t.loadFromFile(RES_DIR+fname+".png")) {
-          txtr.push_back(t);
-      } else {
-          if (t.loadFromFile(RES_DIR+"no-texture"+".png")) {
-              txtr.push_back(t);
-          } else {
-              cout << "[ERROR] Cannot load texture " << fname;
-          }
-      }
+    fname = TXTR_LOAD_FNAME[i];
+    Texture t;
+    if (t.loadFromFile(RES_DIR+fname+".png")) {
+        txtr.push_back(t);
+    } else {
+        if (t.loadFromFile(RES_DIR+"no-texture"+".png")) {
+            txtr.push_back(t);
+        } else {
+            cout << "[ERROR] Cannot load texture " << fname;
+        }
+    }
   }
 }
 
