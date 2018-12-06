@@ -1,3 +1,13 @@
+## Indev 1.2.0 - Dec 5, 2018
+- [ADDITION]
+  - [TECHINCAL] Added collision system v1.0
+  - [TECHINCAL] More data value to each block assigned to be more organized
+  - [TEXTURES] Added more textures (not used)
+  - [CODE] Moved all player position/size constant under Game Config
+
+## Indev 1.1.2a - Dec 5, 2018
+- [NOTE] I decided to not to publicize my source code! And the license will be mere useful!
+
 ## Indev 1.1.2 - Dec 1, 2018
 - Bug fixes!
 

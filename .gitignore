@@ -8,3 +8,7 @@ SFML-2.5.1/
 obj/
 *.dll
 TEMP.txt
+
+# Source Code (All source code now are private)
+*.cpp
+*.h
