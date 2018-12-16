@@ -1,3 +1,12 @@
+## Indev 1.3.0 - Dec 15, 2018
+-[ADDED]
+  - [GAME] Now you can remove blocks!
+
+## Indev 1.2.0a - Dec 7, 2018
+- [CHANGE]
+  - [CODE] Clean codes and reformat the block data.
+  - [CODE] Revamp loadTexture();
+
 ## Indev 1.2.0 - Dec 5, 2018
 - [ADDITION]
   - [TECHINCAL] Added collision system v1.0
